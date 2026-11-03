@@ -13,7 +13,6 @@
       content="Vocalove, AI creative studio, AI voice, AI video generator, AI image generator, talking photo, voice cloning, vocalove.io"
     />
     <meta name="author" content="Vocalove" />
-    <!-- Official product URL — avoid competing with the main site for the same queries. -->
     <link rel="canonical" href="https://vocalove.io/" />
     <link rel="alternate" href="https://vocalove.io/" hreflang="en" />
     <link rel="alternate" href="https://vocalove.io/" hreflang="x-default" />
@@ -29,8 +28,8 @@
       content="Create AI videos, images, and voices in one creative studio. Start with free credits on vocalove.io."
     />
     <meta property="og:url" content="https://vocalove.io/" />
-    <meta property="og:image" content="https://vocalove.io/opengraph-image" />
-    <meta property="og:image:alt" content="Vocalove — Your AI Creative Studio" />
+    <meta property="og:image" content="https://vocaloveio.github.io/assets/gallery/ai-video.jpg" />
+    <meta property="og:image:alt" content="Vocalove AI video creation example" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Vocalove — AI Voice, Video &amp; Image Generator" />
@@ -38,11 +37,12 @@
       name="twitter:description"
       content="Create AI videos, images, and voices in one creative studio on vocalove.io."
     />
-    <meta name="twitter:image" content="https://vocalove.io/opengraph-image" />
+    <meta name="twitter:image" content="https://vocaloveio.github.io/assets/gallery/ai-video.jpg" />
 
     <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/logo.png" />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preload" as="image" href="assets/gallery/ai-video.jpg" />
 
     <script type="application/ld+json">
       {
@@ -75,10 +75,47 @@
             "@id": "https://vocaloveio.github.io/#webpage",
             "url": "https://vocaloveio.github.io/",
             "name": "Vocalove — AI Voice, Video & Image Generator",
-            "description": "Brand hub for Vocalove. Create AI voice, image, and video on vocalove.io.",
+            "description": "Brand hub for Vocalove with real AI creation examples. Create on vocalove.io.",
             "isPartOf": { "@id": "https://vocalove.io/#website" },
             "about": { "@id": "https://vocalove.io/#organization" },
-            "primaryEntityOfPage": "https://vocalove.io/"
+            "primaryEntityOfPage": "https://vocalove.io/",
+            "image": [
+              "https://vocaloveio.github.io/assets/gallery/ai-video.jpg",
+              "https://vocaloveio.github.io/assets/gallery/ai-character.jpg",
+              "https://vocaloveio.github.io/assets/gallery/ai-image.jpg",
+              "https://vocaloveio.github.io/assets/gallery/talking-photo.jpg"
+            ]
+          },
+          {
+            "@type": "ImageGallery",
+            "name": "Vocalove AI creation examples",
+            "url": "https://vocaloveio.github.io/#gallery",
+            "image": [
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://vocaloveio.github.io/assets/gallery/ai-image.jpg",
+                "name": "Vocalove AI Image example",
+                "description": "AI image and clothes style result created with Vocalove"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://vocaloveio.github.io/assets/gallery/ai-video.jpg",
+                "name": "Vocalove AI Video example",
+                "description": "AI video preview generated with Vocalove"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://vocaloveio.github.io/assets/gallery/ai-character.jpg",
+                "name": "Vocalove AI Character example",
+                "description": "AI character generation example from Vocalove"
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://vocaloveio.github.io/assets/gallery/talking-photo.jpg",
+                "name": "Vocalove Talking Photo example",
+                "description": "Portrait style result for talking photo videos"
+              }
+            ]
           }
         ]
       }
@@ -127,6 +164,75 @@
             >
           </div>
 
+          <div class="hero-mosaic" id="gallery" aria-label="Vocalove creation examples">
+            <figure class="mosaic-item mosaic-wide">
+              <img
+                src="assets/gallery/ai-video.jpg"
+                width="800"
+                height="500"
+                alt="Vocalove AI video example — cinematic photo-to-video creation"
+                loading="eager"
+                decoding="async"
+              />
+              <figcaption>AI Video</figcaption>
+            </figure>
+            <figure class="mosaic-item">
+              <img
+                src="assets/gallery/ai-character.jpg"
+                width="400"
+                height="500"
+                alt="Vocalove AI character generator example"
+                loading="eager"
+                decoding="async"
+              />
+              <figcaption>AI Character</figcaption>
+            </figure>
+            <figure class="mosaic-item">
+              <img
+                src="assets/gallery/ai-image.jpg"
+                width="400"
+                height="500"
+                alt="Vocalove AI image editing example"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>AI Image</figcaption>
+            </figure>
+            <figure class="mosaic-item">
+              <img
+                src="assets/gallery/ai-dance.jpg"
+                width="400"
+                height="500"
+                alt="Vocalove AI dance video effect example"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>AI Dance</figcaption>
+            </figure>
+            <figure class="mosaic-item">
+              <img
+                src="assets/gallery/talking-photo.jpg"
+                width="400"
+                height="500"
+                alt="Vocalove talking photo portrait example"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Talking Photo</figcaption>
+            </figure>
+            <figure class="mosaic-item mosaic-wide">
+              <img
+                src="assets/gallery/ai-voice.jpg"
+                width="800"
+                height="400"
+                alt="Vocalove AI voice and character voice studio"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>AI Voice</figcaption>
+            </figure>
+          </div>
+
           <ul class="pillars">
             <li>
               <a
@@ -134,6 +240,15 @@
                 href="https://vocalove.io/ai-image?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_image"
                 rel="noopener"
               >
+                <img
+                  class="pillar-thumb"
+                  src="assets/gallery/ai-image.jpg"
+                  width="640"
+                  height="400"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="pillar-kicker">Studio</span>
                 <strong>AI Image</strong>
                 <p>Edit photos, build characters, and restyle portraits with AI.</p>
@@ -146,6 +261,15 @@
                 href="https://vocalove.io/ai-video-generator?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_video"
                 rel="noopener"
               >
+                <img
+                  class="pillar-thumb"
+                  src="assets/gallery/ai-video.jpg"
+                  width="640"
+                  height="400"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="pillar-kicker">Studio</span>
                 <strong>AI Video</strong>
                 <p>Text-to-video, image-to-video, talking photos, and trend effects.</p>
@@ -158,6 +282,15 @@
                 href="https://vocalove.io/clone-voice?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_voice"
                 rel="noopener"
               >
+                <img
+                  class="pillar-thumb"
+                  src="assets/gallery/ai-voice.jpg"
+                  width="640"
+                  height="400"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span class="pillar-kicker">Studio</span>
                 <strong>AI Voice</strong>
                 <p>Clone a voice from a short sample or generate narration online.</p>
@@ -189,6 +322,15 @@
                 href="https://vocalove.io/talking-photo-videos?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=talking_photo"
                 rel="noopener"
               >
+                <img
+                  class="card-media"
+                  src="assets/gallery/talking-photo.jpg"
+                  width="640"
+                  height="420"
+                  alt="Talking Photo example on Vocalove"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>Talking Photo</h3>
                 <p>Make a still portrait speak with synced lip motion.</p>
                 <span class="go">Try now →</span>
@@ -200,6 +342,15 @@
                 href="https://vocalove.io/ai-character?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_character"
                 rel="noopener"
               >
+                <img
+                  class="card-media"
+                  src="assets/gallery/ai-character.jpg"
+                  width="640"
+                  height="420"
+                  alt="AI Character example on Vocalove"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>AI Character</h3>
                 <p>Generate stylized characters from a photo or prompt.</p>
                 <span class="go">Try now →</span>
@@ -211,6 +362,15 @@
                 href="https://vocalove.io/trends?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=trends"
                 rel="noopener"
               >
+                <img
+                  class="card-media"
+                  src="assets/gallery/thriller-dance.jpg"
+                  width="640"
+                  height="420"
+                  alt="Trending AI dance effect example on Vocalove"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <h3>Trending Effects</h3>
                 <p>Viral dance and meme templates from a single upload.</p>
                 <span class="go">Explore trends →</span>
