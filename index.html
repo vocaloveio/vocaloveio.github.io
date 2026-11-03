@@ -3,46 +3,114 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vocalove — AI Voice, Image &amp; Video Studio</title>
+    <title>Vocalove — AI Voice, Video &amp; Image Generator</title>
     <meta
       name="description"
-      content="Vocalove is your AI creative studio for AI Voice, AI Image, and AI Video. Create on vocalove.io with free credits."
+      content="Create AI videos, images, and voices in one creative studio. Turn your ideas, photos, and prompts into creative content — start with free credits on vocalove.io."
     />
+    <meta
+      name="keywords"
+      content="Vocalove, AI creative studio, AI voice, AI video generator, AI image generator, talking photo, voice cloning, vocalove.io"
+    />
+    <meta name="author" content="Vocalove" />
+    <!-- Official product URL — avoid competing with the main site for the same queries. -->
     <link rel="canonical" href="https://vocalove.io/" />
-    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="alternate" href="https://vocalove.io/" hreflang="en" />
+    <link rel="alternate" href="https://vocalove.io/" hreflang="x-default" />
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow" />
+
+    <meta property="og:site_name" content="Vocalove" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Vocalove — Your AI Creative Studio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Vocalove — AI Voice, Video &amp; Image Generator" />
     <meta
       property="og:description"
-      content="Create AI voices, images, and videos. Start on vocalove.io."
+      content="Create AI videos, images, and voices in one creative studio. Start with free credits on vocalove.io."
     />
     <meta property="og:url" content="https://vocalove.io/" />
     <meta property="og:image" content="https://vocalove.io/opengraph-image" />
+    <meta property="og:image:alt" content="Vocalove — Your AI Creative Studio" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vocalove — AI Voice, Video &amp; Image Generator" />
+    <meta
+      name="twitter:description"
+      content="Create AI videos, images, and voices in one creative studio on vocalove.io."
+    />
+    <meta name="twitter:image" content="https://vocalove.io/opengraph-image" />
+
     <link rel="icon" href="assets/logo-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://vocalove.io/#organization",
+            "name": "Vocalove",
+            "url": "https://vocalove.io/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://vocaloveio.github.io/assets/logo.png"
+            },
+            "sameAs": [
+              "https://vocaloveio.github.io/",
+              "https://github.com/vocaloveio"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://vocalove.io/#website",
+            "url": "https://vocalove.io/",
+            "name": "Vocalove",
+            "description": "AI creative studio for voice, image, and video generation.",
+            "publisher": { "@id": "https://vocalove.io/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://vocaloveio.github.io/#webpage",
+            "url": "https://vocaloveio.github.io/",
+            "name": "Vocalove — AI Voice, Video & Image Generator",
+            "description": "Brand hub for Vocalove. Create AI voice, image, and video on vocalove.io.",
+            "isPartOf": { "@id": "https://vocalove.io/#website" },
+            "about": { "@id": "https://vocalove.io/#organization" },
+            "primaryEntityOfPage": "https://vocalove.io/"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="wrap">
       <header class="topbar">
         <a href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages" rel="noopener">
-          <img class="logo" src="assets/logo.svg" width="180" height="44" alt="Vocalove" />
+          <img class="logo" src="assets/logo.svg" width="180" height="44" alt="Vocalove logo" />
         </a>
-        <a
-          class="topbar-link"
-          href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages"
-          rel="noopener"
-          >Open vocalove.io →</a
-        >
+        <nav class="top-nav" aria-label="Product links">
+          <a href="https://vocalove.io/ai-image?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=nav_image" rel="noopener">AI Image</a>
+          <a href="https://vocalove.io/ai-video-generator?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=nav_video" rel="noopener">AI Video</a>
+          <a href="https://vocalove.io/clone-voice?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=nav_voice" rel="noopener">AI Voice</a>
+          <a
+            class="topbar-link"
+            href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages"
+            rel="noopener"
+            >Open vocalove.io →</a
+          >
+        </nav>
       </header>
 
       <main>
         <section class="hero" aria-labelledby="hero-title">
-          <p class="eyebrow">Vocalove</p>
+          <p class="eyebrow">Vocalove · vocalove.io</p>
           <h1 id="hero-title">Your AI Creative Studio</h1>
           <p class="hero-lead">
-            Create AI voices, images, and videos in the browser. Clone speech, generate visuals, and
-            turn photos into short clips — then download your work from vocalove.io.
+            Create AI voices, images, and videos with powerful AI tools. Turn your ideas into reality
+            and start creating with free credits on
+            <a href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages" rel="noopener">vocalove.io</a>.
           </p>
           <div class="cta-row">
             <a
@@ -66,7 +134,7 @@
                 href="https://vocalove.io/ai-image?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_image"
                 rel="noopener"
               >
-                <span class="pillar-kicker">Create</span>
+                <span class="pillar-kicker">Studio</span>
                 <strong>AI Image</strong>
                 <p>Edit photos, build characters, and restyle portraits with AI.</p>
                 <span>Open AI Image →</span>
@@ -78,7 +146,7 @@
                 href="https://vocalove.io/ai-video-generator?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_video"
                 rel="noopener"
               >
-                <span class="pillar-kicker">Create</span>
+                <span class="pillar-kicker">Studio</span>
                 <strong>AI Video</strong>
                 <p>Text-to-video, image-to-video, talking photos, and trend effects.</p>
                 <span>Open AI Video →</span>
@@ -90,13 +158,23 @@
                 href="https://vocalove.io/clone-voice?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=ai_voice"
                 rel="noopener"
               >
-                <span class="pillar-kicker">Create</span>
+                <span class="pillar-kicker">Studio</span>
                 <strong>AI Voice</strong>
                 <p>Clone a voice from a short sample or generate narration online.</p>
                 <span>Open AI Voice →</span>
               </a>
             </li>
           </ul>
+        </section>
+
+        <section class="section" aria-labelledby="about-title">
+          <h2 id="about-title">What is Vocalove?</h2>
+          <p class="section-lead">
+            Vocalove is an AI creative studio at
+            <a href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=about" rel="noopener">vocalove.io</a>
+            for AI Voice, AI Image, and AI Video. Upload a photo, write a prompt, or paste a script —
+            then generate and download in your browser.
+          </p>
         </section>
 
         <section class="section" aria-labelledby="tools-title">
@@ -113,7 +191,7 @@
               >
                 <h3>Talking Photo</h3>
                 <p>Make a still portrait speak with synced lip motion.</p>
-                <span class="go">Try on vocalove.io →</span>
+                <span class="go">Try now →</span>
               </a>
             </li>
             <li>
@@ -124,7 +202,7 @@
               >
                 <h3>AI Character</h3>
                 <p>Generate stylized characters from a photo or prompt.</p>
-                <span class="go">Try on vocalove.io →</span>
+                <span class="go">Try now →</span>
               </a>
             </li>
             <li>
@@ -139,13 +217,53 @@
               </a>
             </li>
           </ul>
+        </section>
+
+        <section class="section" aria-labelledby="howto-title">
+          <h2 id="howto-title">Create in three steps</h2>
+          <ol class="steps">
+            <li>
+              <strong>Choose a tool</strong>
+              <p>Pick AI Voice, AI Image, or AI Video on vocalove.io.</p>
+            </li>
+            <li>
+              <strong>Upload or prompt</strong>
+              <p>Add a photo, write a prompt, or paste the words you want spoken.</p>
+            </li>
+            <li>
+              <strong>Generate &amp; download</strong>
+              <p>Preview the result, check credits, then download your creation.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section" aria-labelledby="faq-title">
+          <h2 id="faq-title">FAQ</h2>
+          <dl class="faq">
+            <div>
+              <dt>Where do I create content?</dt>
+              <dd>
+                On the product site
+                <a href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=faq" rel="noopener">vocalove.io</a>.
+                This page introduces Vocalove and links you into the studio.
+              </dd>
+            </div>
+            <div>
+              <dt>Can I start for free?</dt>
+              <dd>Yes. Sign in on vocalove.io and start with free credits. Tools show an estimate before you generate.</dd>
+            </div>
+            <div>
+              <dt>What can I make?</dt>
+              <dd>AI voice clones and narration, AI images and characters, talking photos, dance effects, and AI videos.</dd>
+            </div>
+          </dl>
 
           <p class="note">
             Ready to create?
             <a
               href="https://vocalove.io/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gh_pages&amp;utm_content=footer_note"
               rel="noopener"
-              >Open Vocalove</a
+              >Open Vocalove on vocalove.io</a
             >
             — sign in and start with free credits.
           </p>
@@ -154,8 +272,17 @@
 
       <footer class="footer">
         <p>
-          © Vocalove ·
-          <a href="https://vocalove.io/" rel="noopener">vocalove.io</a>
+          © Vocalove · Official studio:
+          <a href="https://vocalove.io/" rel="noopener">https://vocalove.io</a>
+        </p>
+        <p class="footer-links">
+          <a href="https://vocalove.io/ai-image" rel="noopener">AI Image</a>
+          ·
+          <a href="https://vocalove.io/ai-video-generator" rel="noopener">AI Video</a>
+          ·
+          <a href="https://vocalove.io/clone-voice" rel="noopener">AI Voice</a>
+          ·
+          <a href="https://vocalove.io/pricing" rel="noopener">Pricing</a>
         </p>
       </footer>
     </div>

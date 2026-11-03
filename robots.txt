@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vocalove.io/sitemap.xml
+Sitemap: https://vocaloveio.github.io/sitemap.xml
+# Official product sitemap (canonical studio):
+# https://vocalove.io/sitemap.xml
